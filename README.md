@@ -140,10 +140,8 @@ public:
 };
 
 
-// MAP user-name to USER
 map<string, User> mapUserName;
 
-// MAPPING ONE FRIEND TO ANOTHER FRIEND
 map<string, set<string>> Friends;
 
 class Message {
@@ -232,7 +230,6 @@ void displayUserMessages(string userName) {
 }
 
 int main() {
-    // Test cases
     User alice("Alice", "Mishra", 30, "Female");
     User bob("Bob", "Ali", 27, "Male");
     User charlie("Charlie", "Brown", 25, "Male");
@@ -256,7 +253,7 @@ int main() {
     cout << "\nMessages for Alice:" << endl;
     displayUserMessages("Alice");
 
-    // Adding and displaying groups
+
     Group group1("Friends");
     group1.addMember("Alice");
     group1.addMember("Bob");
